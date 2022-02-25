@@ -1,9 +1,15 @@
+package com.example.elasticsearch.models;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Category {
      private int category_Id;
      private String category_title;
      private int category_pages;
      private int category_subcats;
      private int category_files;
+     private String tags;
 
      public void setCategory_Id(int category_Id){
           this.category_Id= category_Id;
@@ -25,6 +31,10 @@ public class Category {
           this.category_files= category_files;
      }
 
+     public void setTags(String tags){
+          this.tags= tags;
+     }
+
      public int getCategory_Id(){
           return this.category_Id;
      }
@@ -43,6 +53,10 @@ public class Category {
 
      public int getCategory_files(){
           return this.category_files;
+     }
+
+     public String getTags(){
+          return this.tags;
      }
 
 }
